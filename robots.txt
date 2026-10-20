@@ -1,0 +1,15 @@
+# Truehound: robots.txt
+#
+# Truehound's deployed demo is a HashRouter SPA: every route lives at
+# the same `/` URL (`/#/login`, `/#/welcome`, etc). Crawlers index
+# the single document; they cannot follow the hash. Robots is here
+# for hygiene + the explicit sitemap reference.
+
+User-agent: *
+Allow: /
+
+# The well-known surfaces.
+# .well-known/security.txt is RFC 9116 (linked from this file +
+# referenced in docs/SECURITY_DISCLOSURE.md).
+
+Sitemap: https://jamesoguyer.github.io/atlas/sitemap.xml

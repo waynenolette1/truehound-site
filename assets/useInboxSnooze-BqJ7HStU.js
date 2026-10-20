@@ -1,0 +1,1 @@
+import{t as e}from"./createSnoozeStore-D_AYxsUF.js";var t=e({storageKey:`atlas:inbox-snooze`}),n=t.useStore;t.__resetForTests;export{n as t};

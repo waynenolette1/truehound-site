@@ -1,0 +1,1 @@
+var e=`atlas.compass.landed.v1`;function t(t){try{window.sessionStorage.setItem(e,JSON.stringify({services:t}))}catch{}}function n(){try{let t=window.sessionStorage.getItem(e);if(!t)return null;let n=JSON.parse(t);return typeof n?.services==`number`?n:null}catch{return null}}function r(){try{window.sessionStorage.removeItem(e)}catch{}}export{t as n,n as r,r as t};

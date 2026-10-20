@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Truehound: sub-processor change feed (Atom 1.0).
+
+  GENERATED FILE — do not edit by hand. Source of truth:
+  src/pages/trust/subprocessors.ts. Regenerate with
+  `npm run subprocessors:feed`. Subscribe in any reader to receive
+  30-day-prior notice of sub-processor changes (the human-readable
+  register lives at /#/trust/subprocessors).
+-->
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Truehound sub-processor changes</title>
+  <id>https://atlas-org.github.io/atlas/trust/subprocessors.xml</id>
+  <link href="https://atlas-org.github.io/atlas/trust/subprocessors.xml" rel="self"/>
+  <link href="https://atlas-org.github.io/atlas/#/trust/subprocessors"/>
+  <updated>2026-06-05T00:00:00Z</updated>
+  <author><name>Truehound</name></author>
+  <subtitle>Material changes to the third parties Truehound engages to deliver a hosted deployment.</subtitle>
+  <entry>
+    <title>Register expanded with conditional hosted-platform sub-processors</title>
+    <id>https://atlas-org.github.io/atlas/trust/subprocessors.xml#2026-06-05-register-expanded-with-conditional-hosted-platform-sub-processors</id>
+    <link href="https://atlas-org.github.io/atlas/#/trust/subprocessors"/>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <summary>The register now documents the conditional sub-processors a hosted Truehound tenant may engage when it turns on a capability: product analytics, control-plane telemetry, an edge CDN, customer support, error monitoring, an analytical warehouse, and SMS/voice escalation. All carry an explicit conditional note, none is an always-on dependency, and self-hosted tenants engage none of them.</summary>
+  </entry>
+  <entry>
+    <title>Sub-processor disclosure page + change feed published</title>
+    <id>https://atlas-org.github.io/atlas/trust/subprocessors.xml#2026-06-01-sub-processor-disclosure-page-change-feed-published</id>
+    <link href="https://atlas-org.github.io/atlas/#/trust/subprocessors"/>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <summary>Truehound published the public sub-processor register at /trust/subprocessors with an Atom change feed. The register documents AWS (hosting) and Stripe (billing) as the always-on sub-processors, plus the conditional email and SSO-broker providers a tenant can opt into.</summary>
+  </entry>
+  <entry>
+    <title>Stripe confirmed as billing sub-processor</title>
+    <id>https://atlas-org.github.io/atlas/trust/subprocessors.xml#2026-02-15-stripe-confirmed-as-billing-sub-processor</id>
+    <link href="https://atlas-org.github.io/atlas/#/trust/subprocessors"/>
+    <updated>2026-02-15T00:00:00Z</updated>
+    <summary>Stripe is engaged for direct-purchase subscription billing and metered usage. Marketplace purchases continue to bypass Stripe (the marketplace is the merchant of record).</summary>
+  </entry>
+  <entry>
+    <title>AWS confirmed as primary infrastructure sub-processor</title>
+    <id>https://atlas-org.github.io/atlas/trust/subprocessors.xml#2025-11-01-aws-confirmed-as-primary-infrastructure-sub-processor</id>
+    <link href="https://atlas-org.github.io/atlas/#/trust/subprocessors"/>
+    <updated>2025-11-01T00:00:00Z</updated>
+    <summary>AWS hosts the BFF, managed Postgres, the Object-Locked audit archive, and KMS-managed keys, in the tenant's selected order-form region.</summary>
+  </entry>
+</feed>

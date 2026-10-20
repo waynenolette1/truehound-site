@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Truehound: sitemap.xml
+
+  Truehound is a HashRouter SPA, so the entire app lives at a single
+  URL. The sitemap lists the canonical entry point only; deep
+  links (`#/login`, `#/welcome`, etc.) resolve client-side. Most
+  of the demo is behind authentication (per the gated-demo
+  policy in README.md), so listing additional URLs here would be
+  misleading to crawlers.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jamesoguyer.github.io/atlas/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
