@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head><script src="/coi-serviceworker.min.js"></script>
+  <head><script>if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){var w=r.active||r.waiting||r.installing;if(w&&/coi-serviceworker/.test(w.scriptURL))r.unregister();});}).catch(function(){});}</script>
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -30,7 +30,12 @@
     <!-- Use static rendering with Expo Router to support running without JavaScript. -->
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <!-- The root element for your Expo app. -->
-    <div id="root"></div>
-  <script src="/_expo/static/js/web/__expo-metro-runtime-8c088df87a31e4e6accd81c554ec290d.js" defer></script><script src="/_expo/static/js/web/__common-d86b285d8766ecb3d9fe4a014d232621.js" defer></script><script src="/_expo/static/js/web/entry-1b9b1ed89efd9aec1176cdf6eb6bb167.js" defer></script>
+    <div id="root"><div id="th-boot" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#07080A;color:#8E99A8;font:14px -apple-system,system-ui,sans-serif;text-align:center;padding:24px">
+<svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><polygon points="17,5 31,19 19,27" fill="#2F80FF"/><polygon points="19,27 31,19 44,22 59,30 57,37 43,38 35,50 22,55 14,43" fill="#C3CBD5"/><polygon points="43,38 57,37 50,43 35,50" fill="#8E99A8"/><polygon points="14,43 22,55 18,61 8,57" fill="#8E99A8"/><polygon points="56,28 62,31 60,36 57,37 59,30" fill="#2F80FF"/><polygon points="34,27 40,25 41,29 36,30" fill="#07080A"/></svg>
+<div id="th-boot-msg">Loading True Hound</div>
+<noscript><div style="color:#F3F5F8">True Hound needs JavaScript turned on.</div></noscript>
+</div>
+<script>setTimeout(function(){var m=document.getElementById('th-boot-msg');if(m){m.style.color='#F3F5F8';m.innerHTML='True Hound did not start.<br/>Reload the page. If it keeps happening, update your browser or try another one.<br/><br/><button onclick="location.reload()" style="font:600 16px system-ui;padding:12px 24px;border-radius:10px;border:0;background:#2F80FF;color:#03060C">Reload</button>';}},25000);</script></div>
+  <script src="/_expo/static/js/web/__expo-metro-runtime-8c088df87a31e4e6accd81c554ec290d.js" defer></script><script src="/_expo/static/js/web/__common-e03605c8c965a73afed66eab2d1f49d4.js" defer></script><script src="/_expo/static/js/web/entry-1a365a86f6280e87957706cbd039123d.js" defer></script>
 </body>
 </html>
