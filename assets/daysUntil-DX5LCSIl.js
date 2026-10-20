@@ -1,1 +1,0 @@
-function e(e,t=Date.now()){let n=Date.parse(`${e}T00:00:00Z`);if(Number.isNaN(n))return 0;let r=new Date(t).setUTCHours(0,0,0,0);return Math.max(0,Math.round((n-r)/864e5))}export{e as t};

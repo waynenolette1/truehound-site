@@ -1,1 +1,0 @@
-function e(e,t){return t<=0?1:Math.max(1,Math.ceil(e/t))}function t(e,t){return Number.isFinite(e)?Math.min(Math.max(1,Math.trunc(e)),Math.max(1,t)):1}function n(n,r,i){let a=(t(r,e(n.length,i))-1)*i;return n.slice(a,a+i)}export{e as n,n as r,t};
