@@ -2,7 +2,7 @@
 # RFC 9116 specifies /.well-known/security.txt as canonical; this file
 # is kept for older scanners that look at the document root.
 
-Contact: mailto:security@truehound.io
+Contact: mailto:truehoundhq@truehound.io
 Contact: https://jamesoguyer.github.io/atlas/#/trust
 Expires: 2027-10-01T00:00:00Z
 Preferred-Languages: en
