@@ -1,0 +1,1 @@
+function e(e){let t=Number(e);return!Number.isInteger(t)||t<1?1:t}export{e as t};

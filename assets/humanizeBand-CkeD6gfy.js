@@ -1,0 +1,1 @@
+var e={no_data:`No data`,"no-data":`No data`,many_teams:`Multiple teams`,na:`N/A`,"n/a":`N/A`};function t(t){if(t==null)return``;let n=String(t).trim();if(!n)return``;let r=e[n.toLowerCase()];if(r)return r;let i=n.replace(/[_-]+/g,` `).trim();return i.charAt(0).toUpperCase()+i.slice(1)}export{t};

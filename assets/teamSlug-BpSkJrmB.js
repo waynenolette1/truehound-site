@@ -1,0 +1,1 @@
+function e(e){let t=e.toLowerCase().replace(/[^a-z0-9]+/g,`-`).replace(/^-+|-+$/g,``);return t===``?`unknown`:t}export{e as t};

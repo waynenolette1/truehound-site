@@ -1,41 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <head><script>if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){var w=r.active||r.waiting||r.installing;if(w&&/coi-serviceworker/.test(w.scriptURL))r.unregister();});}).catch(function(){});}</script>
-    <meta charset="utf-8" />
-    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>True Hound</title>
-    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
-    <style id="expo-reset">
-      /* These styles make the body full-height */
-      html,
-      body {
-        height: 100%;
-      }
-      /* These styles disable body scrolling if you are using <ScrollView> */
-      body {
-        overflow: hidden;
-      }
-      /* These styles make the root element full-height */
-      #root {
-        display: flex;
-        height: 100%;
-        flex: 1;
-      }
-    </style>
-  <meta name="theme-color" content="#07080A">
-<link rel="icon" href="/favicon.ico"/></head>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39; &#39;wasm-unsafe-eval&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39; https://atlas-cloud-connector.wnolette-atlas.workers.dev https://api.github.com https://raw.githubusercontent.com https://gitlab.com https://api.bitbucket.org; worker-src &#39;self&#39; blob:; manifest-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truehound keeps your service catalog true</title>
+    <meta
+      name="description"
+      content="Truehound checks your service catalog against what your monitoring, cloud, and code tools actually report, drafts the fix, and proves it landed. Leaving Compass? Import your export self-serve. Try the live demo, no sign-up."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="mask-icon" href="./brand/mark-black.svg" color="#0b0d10" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="application-name" content="Truehound" />
+    <meta name="apple-mobile-web-app-title" content="Truehound" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Truehound keeps your service catalog true" />
+    <meta
+      property="og:description"
+      content="Your catalog drifts. Truehound catches it against your real tools, a human approves the fix, and the record is verifiable. Try the live demo, no sign-up."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://truehound.io/" />
+    <meta property="og:site_name" content="Truehound" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://truehound.io/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Truehound keeps your service catalog true" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Truehound keeps your service catalog true" />
+    <meta
+      name="twitter:description"
+      content="Your catalog drifts. Truehound catches it against your real tools, a human approves the fix, and the record is verifiable. Try the live demo, no sign-up."
+    />
+    <meta name="twitter:image" content="https://truehound.io/og.png" />
+    <meta name="twitter:image:alt" content="Truehound keeps your service catalog true" />
+    <link rel="canonical" href="https://truehound.io/" />
+    <script type="module" crossorigin src="/assets/index-asuuq0n9.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-QTnfLwEv.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-kiGFOSem.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-radix-3O30ER0O.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-query-CT_mbnGt.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-icons-ouxjAmkH.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-sonner-BFlxczmg.js">
+    <link rel="modulepreload" crossorigin href="/assets/clsx-CjueKrWZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-B9URw_CD.js">
+    <link rel="modulepreload" crossorigin href="/assets/app-shared-BlqkwYLA.js">
+    <link rel="modulepreload" crossorigin href="/assets/providers-DpLvMApg.js">
+    <link rel="modulepreload" crossorigin href="/assets/guidedTourState-BdbdcDhm.js">
+    <link rel="modulepreload" crossorigin href="/assets/welcomeOnboardingState-CfnvMHJ1.js">
+    <link rel="modulepreload" crossorigin href="/assets/app-live-BFxzRIFP.js">
+    <link rel="modulepreload" crossorigin href="/assets/services-C-6w-k8q.js">
+    <link rel="modulepreload" crossorigin href="/assets/themeStorage-DiNkg5wR.js">
+    <link rel="modulepreload" crossorigin href="/assets/AuthContext-BkhZOL7P.js">
+    <link rel="modulepreload" crossorigin href="/assets/PlanPicker-BNyNQW-5.js">
+    <link rel="modulepreload" crossorigin href="/assets/dist-D8TZ7TOf.js">
+    <link rel="modulepreload" crossorigin href="/assets/Button-BTPEas6R.js">
+    <link rel="modulepreload" crossorigin href="/assets/Input-CZYsBec4.js">
+    <link rel="modulepreload" crossorigin href="/assets/useFocusTrap-BYGJoj4v.js">
+    <link rel="modulepreload" crossorigin href="/assets/SignupModal-B4cP-qB3.js">
+    <link rel="modulepreload" crossorigin href="/assets/connectorFeatures-CC-LPceW.js">
+    <link rel="modulepreload" crossorigin href="/assets/queryKeys-BHdllte1.js">
+    <link rel="modulepreload" crossorigin href="/assets/capabilities-CJ08TUEW.js">
+    <link rel="modulepreload" crossorigin href="/assets/repositories-DXlwG-DV.js">
+    <link rel="modulepreload" crossorigin href="/assets/routePrefetch-SlDV1qao.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-DchnwvDl.css">
+  </head>
   <body>
-    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
-    <noscript> You need to enable JavaScript to run this app. </noscript>
-    <!-- The root element for your Expo app. -->
-    <div id="root"><div id="th-boot" style="position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#07080A;color:#8E99A8;font:14px -apple-system,system-ui,sans-serif;text-align:center;padding:24px">
-<svg width="72" height="72" viewBox="0 0 64 64" aria-hidden="true"><polygon points="17,5 31,19 19,27" fill="#2F80FF"/><polygon points="19,27 31,19 44,22 59,30 57,37 43,38 35,50 22,55 14,43" fill="#C3CBD5"/><polygon points="43,38 57,37 50,43 35,50" fill="#8E99A8"/><polygon points="14,43 22,55 18,61 8,57" fill="#8E99A8"/><polygon points="56,28 62,31 60,36 57,37 59,30" fill="#2F80FF"/><polygon points="34,27 40,25 41,29 36,30" fill="#07080A"/></svg>
-<div id="th-boot-msg">Loading True Hound</div>
-<noscript><div style="color:#F3F5F8">True Hound needs JavaScript turned on.</div></noscript>
-</div>
-<script>setTimeout(function(){var m=document.getElementById('th-boot-msg');if(m){m.style.color='#F3F5F8';m.innerHTML='True Hound did not start.<br/>Reload the page. If it keeps happening, update your browser or try another one.<br/><br/><button onclick="location.reload()" style="font:600 16px system-ui;padding:12px 24px;border-radius:10px;border:0;background:#2F80FF;color:#03060C">Reload</button>';}},25000);</script></div>
-  <script src="/_expo/static/js/web/__expo-metro-runtime-8c088df87a31e4e6accd81c554ec290d.js" defer></script><script src="/_expo/static/js/web/__common-e03605c8c965a73afed66eab2d1f49d4.js" defer></script><script src="/_expo/static/js/web/entry-1a365a86f6280e87957706cbd039123d.js" defer></script>
-</body>
+    <div id="root"></div>
+  </body>
 </html>
