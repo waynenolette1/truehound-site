@@ -2,7 +2,7 @@
   "name": "Truehound",
   "short_name": "Truehound",
   "description": "Truehound keeps your service catalog true. Reconcile your catalog against ground truth, so drift becomes prioritised, owned, auditable corrective work.",
-  "id": "/atlas/",
+  "id": "/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

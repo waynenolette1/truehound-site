@@ -12,4 +12,4 @@ Allow: /
 # .well-known/security.txt is RFC 9116 (linked from this file +
 # referenced in docs/SECURITY_DISCLOSURE.md).
 
-Sitemap: https://jamesoguyer.github.io/atlas/sitemap.xml
+Sitemap: https://truehound.io/sitemap.xml

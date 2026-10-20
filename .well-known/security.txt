@@ -2,8 +2,8 @@
 # RFC 9116. Report vulnerabilities to the contact below; see the policy.
 
 Contact: mailto:truehoundhq@truehound.io
-Contact: https://jamesoguyer.github.io/atlas/#/trust
+Contact: https://truehound.io/#/public/trust
 Expires: 2027-10-01T00:00:00Z
 Preferred-Languages: en
-Canonical: https://jamesoguyer.github.io/atlas/.well-known/security.txt
-Policy: https://jamesoguyer.github.io/atlas/#/security-disclosure
+Canonical: https://truehound.io/.well-known/security.txt
+Policy: https://truehound.io/#/security-disclosure

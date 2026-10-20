@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-QTnfLwEv.js";import{_ as t}from"./vendor-react-LdPFgJYB.js";import{P as n}from"./app-shared-C82Pc8BH.js";var r=e(t(),1);function i(e){(0,r.useEffect)(()=>{let t=n.brand.product,r=document.title;return document.title=e?`${e} · ${t}`:t,()=>{document.title=r}},[e])}export{i as t};
