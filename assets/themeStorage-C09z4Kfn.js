@@ -1,1 +1,0 @@
-import{B as e}from"./app-shared-DaGTv3Kb.js";var t=`atlas.theme.v2`;function n(){return e.get(`atlas.theme.v2`)??`dark`}function r(e){return e===`system`?typeof window<`u`&&window.matchMedia?.(`(prefers-color-scheme: dark)`).matches?`dark`:`light`:e}export{n,r,t};
