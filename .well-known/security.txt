@@ -2,7 +2,7 @@
 # RFC 9116. Report vulnerabilities to the contact below; see the policy.
 
 Contact: mailto:truehoundhq@truehound.io
-Contact: https://truehound.io/#/public/trust
+Contact: https://truehound.io/#/security-disclosure
 Expires: 2027-10-01T00:00:00Z
 Preferred-Languages: en
 Canonical: https://truehound.io/.well-known/security.txt
