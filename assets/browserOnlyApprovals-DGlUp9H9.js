@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-QTnfLwEv.js";import{_ as t}from"./vendor-react-kiGFOSem.js";import{qo as n}from"./data-truth-Bb1MIvYd.js";import{s as r}from"./session-Bj36U331.js";var i=e(t(),1);function a(e,t){return e&&(t.status===`off`||t.status===`signed-out`)}function o(e){let t=a(e,r());(0,i.useEffect)(()=>{n.setBrowserOnly(t)},[t])}export{o as t};
