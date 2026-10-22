@@ -1,18 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Truehound: sitemap.xml
-
-  Truehound is a HashRouter SPA, so the entire app lives at a single
-  URL. The sitemap lists the canonical entry point only; deep
-  links (`#/login`, `#/welcome`, etc.) resolve client-side. Most
-  of the demo is behind authentication (per the gated-demo
-  policy in README.md), so listing additional URLs here would be
-  misleading to crawlers.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://truehound.io/</loc>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/pricing/</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/compare/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/compare/vanta/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/compare/drata/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/compare/nudge/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/compare/accessowl/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/compare/spreadsheets/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tools/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tools/offboarding-checklist/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tools/access-review-template/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tools/access-review-readiness/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/offboard-employee-google-workspace/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/user-access-review-template-soc-2/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/remove-user-from-github-organization/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/deactivate-slack-user/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/remove-user-aws-iam-access-keys/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/find-former-employees-github-organization/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/github-outside-collaborators-find-remove/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/rotate-github-deploy-keys/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/soc-2-terminated-employee-access-removal-timeline/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/remove-user-microsoft-365-entra-id/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/okta-deactivate-user-what-it-removes/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
