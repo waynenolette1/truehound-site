@@ -1,0 +1,1 @@
+function e(e){return e.source===`github`&&e.kind===`github`}function t(e){return`${e.source}:${e.id.toLowerCase()}`}export{e as n,t};
