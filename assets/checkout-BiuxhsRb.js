@@ -1,0 +1,16 @@
+import{P as e}from"./app-shared-BMtDGGvY.js";import{i as t}from"./boot-DPcz4YGC.js";var n=e.brand.product,r=`Book the migration`;function i(e){let t=(e??``).trim();if(!t)return null;try{let e=new URL(t);return e.protocol===`https:`?e.toString():null}catch{return null}}var a=i(void 0);function o(t){let r=e.links?.salesEmail||`truehoundhq@truehound.io`,i=t?`${n}: book the migration (${t})`:`${n}: book the migration`,a=`Hi ${n} team,
+
+I'd like to book the Compass migration${t?` on ${t}`:``}.
+
+Name:
+Company:
+Services in Compass (roughly):
+Compass renewal date:
+`;return`mailto:${r}?subject=${encodeURIComponent(i)}&body=${encodeURIComponent(a)}`}function s(e={}){let t=e.checkoutUrl===void 0?a:e.checkoutUrl;return t?{kind:`checkout`,href:t,label:e.plan?`Buy ${e.plan}`:`Pay and book the migration`,external:!0}:{kind:`contact`,href:o(e.plan),label:r,external:!1}}var c=`If your Compass migration is not done before your renewal date, the migration fee is refunded.`,l={migration:{S:i(`https://buy.stripe.com/bJe9AV2RZ9Jcbnn5jFfMA08`),M:i(`https://buy.stripe.com/bJe3cx78f2gKajj4fBfMA09`),L:i(`https://buy.stripe.com/5kQ4gB64b08CfDD6nJfMA0a`)},keptTrue:{S:i(`https://buy.stripe.com/8x2fZj507dZs2QR27tfMA03`),M:i(`https://buy.stripe.com/bJe14p8cj9JcfDD8vRfMA05`),L:i(`https://buy.stripe.com/4gMdRb50708C0IJ13pfMA07`)}},u={S:i(`https://buy.stripe.com/6oU3cx1NV6x08bbh2nfMA02`),M:i(`https://buy.stripe.com/cNicN7akr5sW633aDZfMA04`),L:i(`https://buy.stripe.com/eVqbJ378f7B46337rNfMA06`)},d={monthly:i(`https://buy.stripe.com/eVq8wR2RZf3wcrr13pfMA00`),annual:i(`https://buy.stripe.com/fZu9AVcszcVo1MNaDZfMA01`)},f={audit:i(`https://buy.stripe.com/4gM28takrdZs77727tfMA0b`),watch:i(`https://buy.stripe.com/cNidRbfELdZsgHHaDZfMA0c`)};function p(t,r){let i=e.links?.salesEmail||`truehoundhq@truehound.io`,a=`${n}: activate ${t}`,o=`Hi ${n} team,
+
+I'd like to pay for ${t} and activate my workspace.
+
+Name:
+Company:
+Account email: ${r??``}
+`;return`mailto:${i}?subject=${encodeURIComponent(a)}&body=${encodeURIComponent(o)}`}function m(e,n=l,r=u,i=d,a=f){let o=e.offer===`audit`||e.offer===`watch`?a[e.offer]:e.offer===`starter`?i[e.term===`annual`?`annual`:`monthly`]:e.offer===`keptTrue`&&e.term===`monthly`?r[e.band]??n.keptTrue[e.band]:n[e.offer][e.band];if(o){let n=new URL(o),r=t();r&&n.searchParams.set(`client_reference_id`,r.orgId);let i=r?.email??e.email;return i&&n.searchParams.set(`prefilled_email`,i),{kind:`checkout`,href:n.toString(),label:e.offer===`migration`?`Pay the deposit`:`Pay and activate`,external:!0}}return{kind:`contact`,href:p(e.planName,e.email),label:`Email sales to pay`,external:!1}}export{s as n,m as r,c as t};

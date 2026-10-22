@@ -1,1 +1,0 @@
-var e=`atlas.access.demo.v1`,t=`atlas.access.real.v1`,n=`atlas.access.freeScan.v1`;export{t as n,n as r,e as t};
