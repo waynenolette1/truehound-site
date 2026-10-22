@@ -13,9 +13,16 @@
   <id>https://truehound.io/trust/subprocessors.xml</id>
   <link href="https://truehound.io/trust/subprocessors.xml" rel="self"/>
   <link href="https://truehound.io/#/trust/subprocessors"/>
-  <updated>2026-10-20T00:00:00Z</updated>
+  <updated>2026-10-22T00:00:00Z</updated>
   <author><name>Truehound</name></author>
   <subtitle>Material changes to the third parties Truehound engages to deliver a hosted deployment.</subtitle>
+  <entry>
+    <title>Register checked against the code: Resend, Microsoft, Finch, Merge and Kombo added, each row says when it is engaged</title>
+    <id>https://truehound.io/trust/subprocessors.xml#2026-10-22-register-checked-against-the-code-resend-microsoft-finch-merge-and-kombo-added-each-row-says-when-it-is-engaged</id>
+    <link href="https://truehound.io/#/trust/subprocessors"/>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <summary>Resend (account email), Microsoft (Teams review messages) and the HR connection services Finch, Merge and Kombo were in use behind switches but missing from the register, and are added. Every row now names the legal entity, the transfer mechanism and when it is engaged. The register is now also public at /subprocessors.</summary>
+  </entry>
   <entry>
     <title>Register matches the providers the hosted product actually uses</title>
     <id>https://truehound.io/trust/subprocessors.xml#2026-10-20-register-matches-the-providers-the-hosted-product-actually-uses</id>
