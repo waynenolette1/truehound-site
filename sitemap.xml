@@ -33,6 +33,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://truehound.io/compare/okta/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://truehound.io/compare/spreadsheets/</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
@@ -109,6 +114,11 @@
   </url>
   <url>
     <loc>https://truehound.io/guides/okta-deactivate-user-what-it-removes/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/guides/lean-access-management-google-workspace-entra/</loc>
     <lastmod>2026-10-22</lastmod>
     <priority>0.8</priority>
   </url>
