@@ -1,1 +1,0 @@
-import{K as e}from"./app-shared-C_s1lkDd.js";var t=e=>`atlas.sources.tenant.${e}.v1`,n={get(n){let r=e.get(t(n));return typeof r==`string`&&r?r:null},set(n,r){e.set(t(n),r.trim().toLowerCase())}};export{n as t};
