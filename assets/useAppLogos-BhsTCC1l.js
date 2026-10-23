@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-QTnfLwEv.js";import{_ as t,m as n}from"./vendor-react-kiGFOSem.js";var r=e(t(),1),i=null,a=null;function o(){return a??=n(()=>import(`./brandLogos-Cz8vLlNR.js`).then(e=>i=e.BRAND_LOGOS),[]),a}function s(){let[e,t]=(0,r.useState)(i);return(0,r.useEffect)(()=>{if(i)return;let e=!0;return o().then(n=>{e&&t(n)}),()=>{e=!1}},[]),e}export{s as t};
