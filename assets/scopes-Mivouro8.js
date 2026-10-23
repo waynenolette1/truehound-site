@@ -1,0 +1,1 @@
+var e=[`https://graph.microsoft.com/DeviceManagementManagedDevices.Read.All`,`https://graph.microsoft.com/User.Read`];export{e as t};

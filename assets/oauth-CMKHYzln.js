@@ -1,0 +1,1 @@
+import{entraOAuth as e}from"./oauth-DK_B4rfL.js";import{t}from"./scopes-Mivouro8.js";var n={configured:()=>e.configured(),authorize:()=>e.authorize({write:!1,extraScopes:t,only:!0})};export{n as intuneOAuth};
