@@ -122,4 +122,16 @@
     <lastmod>2026-10-22</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://truehound.io/integrations/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/integrations/github/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/developers/</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
