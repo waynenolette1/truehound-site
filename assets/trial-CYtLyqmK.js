@@ -1,0 +1,1 @@
+import{n as e}from"./api-Bx3Zay2C.js";import{pn as t}from"./index-CS4wrzIJ.js";import{n}from"./sync-CQgt2E-G.js";async function r(r){let i=t.activeOrg();if(!i||!r)return!1;try{return await e(`POST`,`/api/orgs/${i.id}/entitlement/claim`,{sessionId:r}),await n(),!0}catch{return!1}}export{r as claimCheckoutForAccount};
