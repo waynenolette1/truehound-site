@@ -1,0 +1,1 @@
+var e={members:`Org members`,twoFactor:`Two-factor status`,outsideCollaborators:`Outside collaborators`,repoAdmins:`Repo admins`,teams:`Team maintainers`,deployKeys:`Deploy keys`,webhooks:`Webhooks`,publicRepos:`Public repos`,secrets:`Secrets in code`,codeowners:`CODEOWNERS`,activity:`Last activity`};export{e as t};
