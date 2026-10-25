@@ -36,6 +36,10 @@
  *        --all-tools also checks built-in tools (Claude Code and Codex: every
  *        tool, matcher "*"; Cursor: beforeShellExecution). They arrive as
  *        server "builtin", for example builtin/Bash with the command as input.
+ *        --browser also checks the client's own web tools (Claude Code and
+ *        Codex: WebFetch and WebSearch), so an agent's browsing is governed
+ *        by site; browser MCP servers (Playwright, Chrome DevTools, Claude in
+ *        Chrome) are MCP calls and are checked either way.
  *        reads the token from TRUEHOUND_HOOK_TOKEN or asks for it, writes
  *        ~/.truehound/hook.json (mode 600), copies this file to
  *        ~/.truehound/truehound-hook.mjs and adds the hook to the client's
@@ -452,13 +456,15 @@ const MARKER = "truehound-hook.mjs";
  * Add (or update) the Truehound hook in a client config object, keeping
  * everything else in it. Returns the new object.
  */
-export function mergeClientConfig(client, existing, command, { allTools = false } = {}) {
+export const BROWSER_MATCHER = "mcp__.*|WebFetch|WebSearch";
+
+export function mergeClientConfig(client, existing, command, { allTools = false, browser = false } = {}) {
   const cfg = existing && typeof existing === "object" ? structuredClone(existing) : {};
   cfg.hooks = cfg.hooks && typeof cfg.hooks === "object" ? cfg.hooks : {};
   const strip = (list) => (Array.isArray(list) ? list : []).filter((h) => !JSON.stringify(h).includes(MARKER));
   if (client === "claude-code" || client === "codex") {
     // Claude Code: timeout in seconds (the script gives up on the network after 250 ms itself).
-    cfg.hooks.PreToolUse = [...strip(cfg.hooks.PreToolUse), { matcher: allTools ? "*" : "mcp__.*", hooks: [{ type: "command", command, timeout: 5 }] }];
+    cfg.hooks.PreToolUse = [...strip(cfg.hooks.PreToolUse), { matcher: allTools ? "*" : browser ? BROWSER_MATCHER : "mcp__.*", hooks: [{ type: "command", command, timeout: 5 }] }];
   } else if (client === "cursor") {
     cfg.version = cfg.version ?? 1;
     cfg.hooks.beforeMCPExecution = [...strip(cfg.hooks.beforeMCPExecution), { command, timeout: 5 }];
@@ -516,7 +522,7 @@ async function install(argv) {
   const self = new URL(import.meta.url).pathname;
   if (n.path.resolve(self) !== n.path.resolve(script)) n.fs.copyFileSync(self, script);
   const file = clientConfigPath(client, { homeDir: n.os.homedir() });
-  const next = mergeClientConfig(client, readJsonFile(n, file, {}), hookCommand(script, client), { allTools: argv.includes("--all-tools") });
+  const next = mergeClientConfig(client, readJsonFile(n, file, {}), hookCommand(script, client), { allTools: argv.includes("--all-tools"), browser: argv.includes("--browser") });
   writeJsonFile(n, file, next, 0o644);
   process.stderr.write(`Truehound hook installed for ${client}: ${file}\nToken kept in ${n.path.join(dir, "hook.json")} (only you can read it).\n`);
 }
@@ -534,7 +540,7 @@ async function printConfig(argv) {
   const managed = argv.includes("--managed");
   const script = argValue(argv, "--script") ?? (process.platform === "darwin" ? "/Library/Application Support/Truehound/truehound-hook.mjs" : "/opt/truehound/truehound-hook.mjs");
   const target = clientConfigPath(client, { homeDir: "~", managed });
-  process.stdout.write(`${JSON.stringify(mergeClientConfig(client, {}, hookCommand(script, client), { allTools: argv.includes("--all-tools") }), null, 2)}\n`);
+  process.stdout.write(`${JSON.stringify(mergeClientConfig(client, {}, hookCommand(script, client), { allTools: argv.includes("--all-tools"), browser: argv.includes("--browser") }), null, 2)}\n`);
   process.stderr.write(`Deploy to: ${target ?? "the client's user config"}. Put { "api": ..., "token": ... } in ${managed ? "the Truehound managed hook.json" : "~/.truehound/hook.json"} with mode 600.\n`);
 }
 
