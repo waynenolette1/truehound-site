@@ -1,0 +1,42 @@
+# Truehound
+
+> Truehound is the AI access agent that proves its work: it finds the accounts people, service accounts and AI agents hold across connected apps, removes them with a person's approval, and re-reads each app to prove they are gone.
+
+Every docs page says what the product does today and what has to be set up first. The same pages in full are at https://truehound.io/llms-full.txt.
+
+## Start
+
+- [Getting started](https://truehound.io/docs/getting-started/): From the free scan to your first access review: what Truehound does, the order to set it up in, and where each step lives in the app.
+
+## Connect
+
+- [Connect your apps](https://truehound.io/docs/connect-apps/): The six ways an app connects to Truehound: browser sign-in, API token, SCIM, browser playbook, imported list and the custom connector. What each reads and can remove.
+
+## Do the work
+
+- [Access reviews](https://truehound.io/docs/access-reviews/): Run a user access review across your connected apps: scope preview, a reason on every line, revoke then verify, sign-off, schedules and the evidence pack.
+- [Offboarding](https://truehound.io/docs/offboarding/): Find everyone who left and still has access, remove them from every app that allows it, check each removal, and keep a receipt with the time it took.
+- [Access requests](https://truehound.io/docs/access-requests/): Self-serve access: an employee asks for an app and a role, the owner approves, Truehound grants and checks it, and time-bound access is removed on time.
+
+## AI
+
+- [Autopilot](https://truehound.io/docs/autopilot/): Autopilot works your access queue inside rules you set: triage, removal, routine grants, review pre-fill and leavers. Each change is proven by a re-read.
+- [AI keys (bring your own key)](https://truehound.io/docs/ai-keys/): Truehound's AI runs on your own Anthropic key, so the charges go to your account. How to add the key, what is sent, and the page that inventories AI keys people create.
+- [MCP hooks and Truehound in Claude](https://truehound.io/docs/mcp-hooks/): Govern the tools your AI coding agents call with a small open hook, and let Claude work your access queue through Truehound's own MCP server.
+
+## Build
+
+- [API and webhooks](https://truehound.io/docs/api-webhooks/): The Truehound REST API: keys and scopes, paging, errors and limits, signed webhooks with retries and a delivery log, and Proof streamed to your SIEM.
+- [Terraform provider](https://truehound.io/docs/terraform/): Manage review schedules, the approval policy, role bundles and webhooks as code with the Truehound Terraform provider, with import and drift detection.
+- [SCIM](https://truehound.io/docs/scim/): Four uses of SCIM: your identity provider provisions people into Truehound, Truehound provisions people in apps and reads them, and a bridge adds SCIM to apps without it.
+
+## Trust
+
+- [Security and data handling](https://truehound.io/docs/security-data/): What Truehound reads, where it keeps it, how credentials and the AI key are protected, how long data is kept, and what we do not have yet. Matches the Trust Center.
+
+## Optional
+
+- [Pricing](https://truehound.io/pricing/): public prices
+- [Trust center](https://truehound.io/trust/): what is in place and what is not
+- [API reference](https://truehound.io/developers/): the REST API, webhooks and the Terraform provider
+- [Changelog](https://truehound.io/changelog/): what shipped, by date

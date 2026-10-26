@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-QTnfLwEv.js";import{_ as t}from"./vendor-react-kiGFOSem.js";import{u as n}from"./app-core-CIf9IsFW.js";var r=e(t(),1);function i(){return(0,r.useSyncExternalStore)(n.subscribe,n.list,n.list)}export{i as t};
