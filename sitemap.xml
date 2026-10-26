@@ -239,6 +239,50 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://truehound.io/tours/request-an-app/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/grant-a-joiners-apps/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/review-google-workspace/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/review-okta/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/let-autopilot-work-the-queue/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/audit-ai-keys/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/review-microsoft-entra/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/review-datadog/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/review-asana/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/review-hibob/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://truehound.io/tours/slack-access-requests/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://truehound.io/trust/</loc>
     <lastmod>2026-10-23</lastmod>
     <priority>0.8</priority>

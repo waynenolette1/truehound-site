@@ -1,0 +1,1 @@
+import{t as e}from"./vendor-react-kiGFOSem.js";import{wt as t}from"./app-core-DP1Lt3rL.js";import{bt as n}from"./index-CK78hB31.js";var r=e();function i(e){let{theme:i}=n();return(0,r.jsx)(t,{...e,theme:i})}export{i as ThemedToaster};
