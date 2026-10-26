@@ -1,1 +1,0 @@
-var e={seats:15,auditDiscount:50,watchDiscount:30,auditCode:`FOUNDINGAUDIT`,watchCode:`FOUNDINGWATCH`};export{e as t};

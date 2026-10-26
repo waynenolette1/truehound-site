@@ -1,0 +1,1 @@
+var e={seats:15,onceDiscount:50,onceCode:`FOUNDING50`,recurringDiscount:30,recurringCode:`FOUNDING30`,recurringMonths:24};export{e as t};
