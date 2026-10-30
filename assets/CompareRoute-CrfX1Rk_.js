@@ -1,1 +1,0 @@
-import{a as e,f as t,t as n}from"./vendor-react-kiGFOSem.js";import{n as r}from"./compareData-DIDVdwRY.js";import{AccessComparePage as i}from"./AccessComparePage-D222mQPK.js";var a=n();function o(){let{vendor:n}=t(),o=r.find(e=>e.slug===n);return o?(0,a.jsx)(i,{slug:o.slug}):(0,a.jsx)(e,{to:`/compare`,replace:!0})}export{o as CompareRoute};
