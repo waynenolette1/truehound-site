@@ -16,8 +16,5 @@
     route = mine;
   }
   var show = !!mine && (route === mine || (path === "/" && (route === "" || route === "/")));
-  if (show && path === "/" && route !== mine) {
-    try { if (localStorage.getItem("atlas.session.v1")) show = false; } catch (e) {}
-  }
   if (!show) document.documentElement.className += " th-spa";
 })();

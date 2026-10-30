@@ -1,8 +1,8 @@
 /*
  * Truehound landing first paint (scripts/landing-shell.mjs prints the shell).
  *
- * 1. Shows the static hero only on the landing route for a signed-out
- *    visitor; anything else removes it at once. The React landing page
+ * 1. Shows the static hero only on the landing route (signed in or not: the
+ *    address always shows the homepage); anything else removes it at once. The React landing page
  *    removes it when it mounts; a hash change or a failed boot removes it too.
  * 2. Boots the app: in a production build the entry module is handed over on
  *    data-entry and started right after the shell's first frame, so the hero
@@ -25,13 +25,7 @@
     if (shell && shell.parentNode) shell.parentNode.removeChild(shell);
   };
   var landing = /^(#\/?(welcome)?(\?[^#]*)?)?$/.test(location.hash);
-  var signedIn = false;
-  try {
-    signedIn = !!localStorage.getItem("atlas.session.v1");
-  } catch (e) {
-    signedIn = false;
-  }
-  if (!shell || !landing || signedIn) {
+  if (!shell || !landing) {
     remove();
     boot();
     return;
