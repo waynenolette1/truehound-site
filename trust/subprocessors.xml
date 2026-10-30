@@ -13,9 +13,16 @@
   <id>https://truehound.io/trust/subprocessors.xml</id>
   <link href="https://truehound.io/trust/subprocessors.xml" rel="self"/>
   <link href="https://truehound.io/#/trust/subprocessors"/>
-  <updated>2026-10-22T00:00:00Z</updated>
+  <updated>2026-10-26T00:00:00Z</updated>
   <author><name>Truehound</name></author>
   <subtitle>Material changes to the third parties Truehound engages to deliver a hosted deployment.</subtitle>
+  <entry>
+    <title>Cloudflare Workers AI added for the website's AI rep</title>
+    <id>https://truehound.io/trust/subprocessors.xml#2026-10-26-cloudflare-workers-ai-added-for-the-website-s-ai-rep</id>
+    <link href="https://truehound.io/#/trust/subprocessors"/>
+    <updated>2026-10-26T00:00:00Z</updated>
+    <summary>The public website has an AI rep, a chat bubble that answers visitors' questions from Truehound's published pages. Its model runs on Cloudflare Workers AI, from Cloudflare, already a sub-processor. It sees only the question a visitor types and passages from our public pages, never customer workspace data. Truehound keeps the question (emails and phone numbers masked) and a keyed hash of the IP address for 30 days.</summary>
+  </entry>
   <entry>
     <title>Register checked against the code: Resend, Microsoft, Finch, Merge and Kombo added, each row says when it is engaged</title>
     <id>https://truehound.io/trust/subprocessors.xml#2026-10-22-register-checked-against-the-code-resend-microsoft-finch-merge-and-kombo-added-each-row-says-when-it-is-engaged</id>
