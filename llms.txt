@@ -10,7 +10,7 @@ Every docs page says what the product does today and what has to be set up first
 
 ## Connect
 
-- [Connect your apps](https://truehound.io/docs/connect-apps/): The six ways an app connects to Truehound: browser sign-in, API token, SCIM, browser playbook, imported list and the custom connector. What each reads and can remove.
+- [Connect your apps](https://truehound.io/docs/connect-apps/): The six ways an app connects to Truehound: browser login, API token, SCIM, browser playbook, imported list and the custom connector. What each reads and can remove.
 
 ## Do the work
 
