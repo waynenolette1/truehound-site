@@ -1,1 +1,0 @@
-import{t as e}from"./vendor-react-LdPFgJYB.js";import{wt as t}from"./app-core-BUPzF1T2.js";import{xt as n}from"./index-FsnzB5av.js";var r=e();function i(e){let{theme:i}=n();return(0,r.jsx)(t,{...e,theme:i})}export{i as ThemedToaster};
